@@ -1,0 +1,12 @@
+:HL["/_next/static/chunks/444dz7dc1erj7.css","style"]
+:HL["/_next/static/chunks/0emjokkhyfkke.css","style"]
+:HL["/_next/static/chunks/1c-um3brxyvf0.css","style"]
+:HL["/brand/travehub-logo.svg","image"]
+:HL["/brand/travehub-logo-light.svg","image"]
+:HL["/brand/drive-forum-original.svg","image"]
+:HL["/images/places/2gis-70000001104996590.webp","image",{"fetchPriority":"high"}]
+4:[["children",{"s":"__PAGE__","h":160}]]
+3:[["children",{"s":{"n":"slug","t":"d","k":"glamping-2gis-70000001104996590","s":[]},"h":65632,"c":"$Q4"}]]
+2:[["children",{"s":"places","h":131136,"c":"$Q3"}]]
+1:[["children",{"s":{"n":"locale","t":"d","k":"kk","s":[]},"h":196640,"c":"$Q2"}]]
+0:{"b":"oGipDTnvxBfItITTTbFsO","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}

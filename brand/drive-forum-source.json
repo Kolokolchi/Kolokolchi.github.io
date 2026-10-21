@@ -1,0 +1,59 @@
+{
+  "sourcePage": "https://driveforum.kz/",
+  "retrievedAt": "2026-10-21T18:49:50.469Z",
+  "assets": [
+    {
+      "path": "/brand/drive-forum-original.svg",
+      "url": "https://static.tildacdn.pro/tild3332-3864-4366-b030-353737306337/driveforum_emblem_wh.svg",
+      "role": "Original white Drive Forum DF emblem used in website navigation",
+      "viewBox": "0 0 5626.01 3476.87",
+      "bytes": 1991
+    },
+    {
+      "path": "/brand/drive-forum-reference.png",
+      "url": "https://static.tildacdn.pro/tild6337-3435-4161-a139-326166343563/image.png",
+      "role": "Original website social image with emblem and wordmark",
+      "width": 946,
+      "height": 499,
+      "bytes": 9151
+    }
+  ],
+  "dominantColors": [
+    {
+      "hex": "#211a15",
+      "count": 388487
+    },
+    {
+      "hex": "#fefefe",
+      "count": 58792
+    },
+    {
+      "hex": "#ffc000",
+      "count": 10461
+    },
+    {
+      "hex": "#042433",
+      "count": 8634
+    },
+    {
+      "hex": "#b9b7b6",
+      "count": 391
+    },
+    {
+      "hex": "#aba9a7",
+      "count": 358
+    },
+    {
+      "hex": "#c6c5c3",
+      "count": 299
+    },
+    {
+      "hex": "#9d9a98",
+      "count": 285
+    }
+  ],
+  "notes": [
+    "Original downloaded assets are unmodified.",
+    "The favicon and navigation logo are byte-identical SVG assets hosted at different Tilda CDN URLs."
+  ]
+}

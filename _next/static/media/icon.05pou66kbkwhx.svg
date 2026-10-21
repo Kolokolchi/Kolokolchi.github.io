@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">TraveHub</title>
+  <desc id="desc">White TH monogram on a dark square.</desc>
+  <rect width="64" height="64" rx="12" fill="#211A15"/>
+  <path fill="#FEFEFE" fill-rule="evenodd" transform="matrix(.2231405 0 -.0446281 .2231405 7.785 14.1488)" d="M0 0H146V62H196V0H234V160H196V100H146V160H108V38H82V160H44V38H0Z M118 66H174V71H118Z M118 78H174V83H118Z M118 90H174V95H118Z"/>
+</svg>

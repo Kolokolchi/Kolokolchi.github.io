@@ -1,0 +1,40 @@
+{
+  "name": "TraveHub",
+  "wordmark": "TRAVEHUB",
+  "createdFrom": "Original hand-authored TH vector monogram and outlined local Noto Sans Black lettering",
+  "reference": "/brand/drive-forum-original.svg",
+  "font": {
+    "source": "/fonts/noto-sans.ttf",
+    "family": "Noto Sans",
+    "weight": 900,
+    "width": 100,
+    "license": "/fonts/OFL.txt",
+    "outlined": true
+  },
+  "palette": {
+    "dark": "#211A15",
+    "white": "#FEFEFE",
+    "yellow": "#FFC000"
+  },
+  "monogramSlope": "11.31 degrees forward",
+  "assets": {
+    "travehub-logo.svg": {
+      "viewBox": "0 0 704.69 120",
+      "ratio": 5.872416666666667,
+      "purpose": "Light backgrounds"
+    },
+    "travehub-logo-light.svg": {
+      "viewBox": "0 0 704.69 120",
+      "ratio": 5.872416666666667,
+      "purpose": "Dark backgrounds"
+    },
+    "travehub-mark.svg": {
+      "viewBox": "-8 0 242 160",
+      "ratio": 1.5125
+    },
+    "travehub-icon.svg": {
+      "viewBox": "0 0 64 64",
+      "ratio": 1
+    }
+  }
+}
