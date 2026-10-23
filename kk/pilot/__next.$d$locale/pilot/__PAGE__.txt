@@ -2,27 +2,28 @@
 4:"/_next/static/chunks/0umf92h1sb77c.js"
 5:I[39756,["$4"],"default"]
 6:I[37457,["$4"],"default"]
-b:"/_next/static/chunks/2gos20hno_91o.js"
-c:I[22016,["$4","$b"],""]
-d:I[97367,["$4"],"OutletBoundary"]
-e:"$Sreact.suspense"
-11:"ViewportBoundary"
-12:I[97367,["$4"],"$11"]
-13:"MetadataBoundary"
-14:I[97367,["$4"],"$13"]
-15:I[27201,["$4"],"IconMark"]
+b:"/_next/static/chunks/3y02zmlmykue9.js"
+c:"/_next/static/chunks/2ohb2gvus-47f.js"
+d:I[22016,["$4","$b","$c"],""]
+e:I[97367,["$4"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:"ViewportBoundary"
+13:I[97367,["$4"],"$12"]
+14:"MetadataBoundary"
+15:I[97367,["$4"],"$14"]
+16:I[27201,["$4"],"IconMark"]
 8:X
 8:C
 9:X
-a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","main",null,{"id":"main","className":"container pilot-page","children":[["$","div",null,{"className":"page-intro","children":["$undefined",["$","h1",null,{"children":"TraveHub кабинеттерін қолданып көріңіз"}],["$","p",null,{"children":"Тіркелусіз және серверсіз презентация. Өзгерістеріңіз тек браузерде сақталады."}]]}],["$","div",null,{"className":"pilot-grid","children":[["$","article",null,{"className":"pilot-card","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":28,"height":28,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-compass","aria-hidden":"true","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","9ktpf1",{"d":"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"}],"$undefined"]}],["$","h2",null,{"children":"Саяхатшы"}],["$","p",null,{"children":"Сапарлар құрып, орындар мен әсерлерді сақтаңыз және жеке брондау жазбаларын жүргізіңіз."}],["$","$Lc",null,{"href":"/kk/account","className":"text-link","children":"Кабинетті ашу"}]]}],["$","article",null,{"className":"pilot-card","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":28,"height":28,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tent-tree","aria-hidden":"true","children":[["$","circle","bt5ra8",{"cx":"4","cy":"4","r":"2"}],["$","path","1sorif",{"d":"m14 5 3-3 3 3"}],["$","path","1jyi9h",{"d":"m14 10 3-3 3 3"}],["$","path","8ymqnk",{"d":"M17 14V2"}],["$","path","13ar7p",{"d":"M17 14H7l-5 8h20Z"}],["$","path","1ghmqk",{"d":"M8 14v8"}],["$","path","13pgi6",{"d":"m9 14 5 8"}],"$undefined"]}],["$","h2",null,{"children":"Бизнес иесі"}],["$","p",null,{"children":"Нысандарды қосып, орналасуды, қолмен енгізілген брондаулар мен қолжетімділікті басқарыңыз."}],["$","$Lc",null,{"href":"/kk/account?mode=business","className":"text-link","children":"Бизнес кабинетін ашу"}]]}]]}]]}],null,["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":"$@10","v":null,"s":"$9"}}]]
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","main",null,{"id":"main","className":"container pilot-page","children":[["$","div",null,{"className":"page-intro","children":["$undefined",["$","h1",null,{"children":"Сіздің TraveHub кабинетіңіз"}],["$","p",null,{"children":"Сапарларды жоспарлап, жазбаларды бір жерде сақтаңыз. Өзгерістеріңіз браузеріңізде сақталады."}]]}],["$","div",null,{"className":"pilot-grid","children":[["$","article",null,{"className":"pilot-card","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":28,"height":28,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-compass","aria-hidden":"true","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","9ktpf1",{"d":"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"}],"$undefined"]}],["$","h2",null,{"children":"Саяхатшы"}],["$","p",null,{"children":"Сапарлар құрып, орындар мен әсерлерді сақтаңыз және жеке брондау жазбаларын жүргізіңіз."}],["$","$Ld",null,{"href":"/kk/account","className":"text-link","children":"Кабинетті ашу"}]]}],["$","article",null,{"className":"pilot-card","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":28,"height":28,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tent-tree","aria-hidden":"true","children":[["$","circle","bt5ra8",{"cx":"4","cy":"4","r":"2"}],["$","path","1sorif",{"d":"m14 5 3-3 3 3"}],["$","path","1jyi9h",{"d":"m14 10 3-3 3 3"}],["$","path","8ymqnk",{"d":"M17 14V2"}],["$","path","13ar7p",{"d":"M17 14H7l-5 8h20Z"}],["$","path","1ghmqk",{"d":"M8 14v8"}],["$","path","13pgi6",{"d":"m9 14 5 8"}],"$undefined"]}],["$","h2",null,{"children":"Бизнес иесі"}],["$","p",null,{"children":"Нысандарды қосып, орналасуды, қолмен енгізілген брондаулар мен қолжетімділікті басқарыңыз."}],["$","$Ld",null,{"href":"/kk/account?mode=business","className":"text-link","children":"Бизнес кабинетін ашу"}]]}]]}]]}],null,["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":"$@11","v":null,"s":"$9"}}]]
 2:[["children",{"s":"pilot","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"kk","s":[]},"h":65568,"c":"$Q2"}]]
-0:{"t":{"t":{"s":"","h":131152,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L12",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Қазақстан бойынша саяхат — TraveHub"}],["$","meta","1",{"name":"description","content":"Қазақстан бойынша автосаяхаттар: орындар картасы, жету жолы, инфрақұрылым және қосылған нысандарды брондау."}],["$","link","2",{"rel":"icon","href":"/icon.svg?icon.05pou66kbkwhx.svg","sizes":"any","type":"image/svg+xml"}],["$","$L15","3",{}]]}]}],null]}],null]}],"p":"$@16","v":null,"s":"$9"}},"a":"$@17","u":"$@18","b":"oGipDTnvxBfItITTTbFsO"}
-f:null
-18:true
+0:{"t":{"t":{"s":"","h":131152,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L13",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"}]]}],["$","$L15",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Қазақстан бойынша саяхат — TraveHub"}],["$","meta","1",{"name":"description","content":"Қазақстан бойынша автосаяхаттар: орындар картасы, жету жолы, инфрақұрылым және қосылған нысандарды брондау."}],["$","link","2",{"rel":"icon","href":"/icon.svg?icon.05pou66kbkwhx.svg","sizes":"any","type":"image/svg+xml"}],["$","$L16","3",{}]]}]}],null]}],null]}],"p":"$@17","v":null,"s":"$9"}},"a":"$@18","u":"$@19","b":"7fvjbgmNhzLvQsNOCRavK"}
+10:null
+19:true
 9:300
 9:C
-17:0
+18:0
 7:"$undefined"
-16:"$undefined"
-10:"$undefined"
+17:"$undefined"
+11:"$undefined"
