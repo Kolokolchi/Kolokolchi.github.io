@@ -7,4 +7,4 @@
 3:[["children",{"s":{"n":"slug","t":"d","k":"ak-zhol-podstepnoye","s":[]},"h":65632,"c":"$Q4"}]]
 2:[["children",{"s":"places","h":131136,"c":"$Q3"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"kk","s":[]},"h":196640,"c":"$Q2"}]]
-0:{"b":"7fvjbgmNhzLvQsNOCRavK","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"j2qtwJ0wPA6Il5jcejTjS","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}

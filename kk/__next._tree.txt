@@ -5,4 +5,4 @@
 :HL["/images/places/natural-home-hero-kolsai.webp","image",{"fetchPriority":"high"}]
 2:[["children",{"s":"__PAGE__","h":128}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"kk","s":[]},"h":65568,"c":"$Q2"}]]
-0:{"b":"7fvjbgmNhzLvQsNOCRavK","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"j2qtwJ0wPA6Il5jcejTjS","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
