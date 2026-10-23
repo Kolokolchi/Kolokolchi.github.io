@@ -1,5 +1,5 @@
 :HL["/_next/static/chunks/260newuet--xp.css","style"]
-:HL["/_next/static/chunks/3ouyligw5xoha.css","style"]
+:HL["/_next/static/chunks/3c195bxr_wa8e.css","style"]
 :HL["/_next/static/chunks/1c-um3brxyvf0.css","style"]
 :HL["/brand/drive-forum-original.svg","image"]
 :HL["/images/places/2gis-70000001104073179.webp","image",{"fetchPriority":"high"}]
@@ -7,4 +7,4 @@
 3:[["children",{"s":{"n":"slug","t":"d","k":"glamping-2gis-70000001104073179","s":[]},"h":65632,"c":"$Q4"}]]
 2:[["children",{"s":"places","h":131136,"c":"$Q3"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"kk","s":[]},"h":196640,"c":"$Q2"}]]
-0:{"b":"j2qtwJ0wPA6Il5jcejTjS","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"ItoCbIETKrjvBWVJ02PHx","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
