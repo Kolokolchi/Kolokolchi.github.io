@@ -4,11 +4,14 @@
 #original-format{background:transparent;color:#51525c;font-size:12px;border:1px solid transparent;padding:5px 8px;border-radius:5px;margin-right:auto}
 #original-format:hover{border-color:#c9c9d0}
 #original-format[aria-pressed=true]{background:#e9e8ee;color:#302e40}
-#toggle-themes{display:flex;align-items:center;gap:5px;padding:6px 9px;background:transparent;border:1px solid #d7d7df;border-radius:6px;color:#464651;font-size:12px}
-#toggle-themes:hover{background:#fff}
-#toggle-themes span{font-size:16px;line-height:.7;transform:translateY(-2px)}
-#toggle-themes[aria-expanded=true] span{transform:rotate(180deg)}
-#themes[hidden],.spot[hidden]{display:none}
+#motion-toggle{display:inline-flex;align-items:center;gap:7px;min-height:34px;padding:4px 9px;border:1px solid #d7d7df;border-radius:7px;background:white;color:#32323c;font-size:12px;font-weight:600}
+#motion-toggle:hover{border-color:#9796aa}
+#motion-state{min-width:3.6em;color:#64636d;font-weight:400;text-align:left}
+.switch-track{display:block;width:28px;height:16px;border-radius:12px;background:#696975;padding:2px;text-align:left}
+.switch-track::after{content:"";display:block;width:12px;height:12px;border-radius:50%;background:white}
+#motion-toggle[aria-checked=true] .switch-track{background:#5048b8}
+#motion-toggle[aria-checked=true] .switch-track::after{transform:translateX(12px)}
+.spot[hidden]{display:none}
 .format-picker{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:16px}
 .format-choice{display:flex;align-items:center;gap:12px;min-width:0;padding:6px;border:1px solid #d9d9e1;border-radius:10px;background:#fff;color:#32323c;font-size:14px;font-weight:600}
 .format-choice:hover{border-color:#9796aa}
@@ -85,7 +88,6 @@
   .picker-heading{gap:3px;flex-wrap:wrap}
   .picker-heading h2{font-size:14px}
   #original-format{font-size:11px;padding-inline:4px}
-  #toggle-themes{padding:5px;font-size:11px}
   .format-picker{gap:4px;margin-bottom:10px}
   .format-choice{flex-direction:column;gap:3px;padding:3px 2px 5px;border-radius:7px;font-size:11px}
   .format-proof{width:100%;height:36px;min-width:0}
@@ -97,4 +99,39 @@
   #experience[data-format=sign] .zone-arrow{width:12px;margin-left:0}
   .marker-photo{width:106px}
   .marker-photo img{height:46px}
+}
+
+.reveal-label{display:inline-block}
+:root{--ease-reveal:cubic-bezier(.23,1,.32,1);--icon-reveal:icon-appear;--label-reveal:label-appear}
+@keyframes icon-appear{
+  from{opacity:.2;scale:.91}
+  to{opacity:1;scale:1}
+}
+@keyframes label-appear{
+  from{opacity:.2;translate:0 4px}
+  to{opacity:1;translate:0 0}
+}
+@keyframes fade-appear{
+  from{opacity:.35}
+  to{opacity:1}
+}
+
+/* Move the artwork inside the hit area, leaving its projected coordinates intact. */
+html[data-motion=on] :is(.spot > :first-child,.sign > svg,.zone[aria-pressed=true] .zone-symbol,.concept[aria-pressed=true] .tile-art svg){
+  animation:var(--icon-reveal) 220ms var(--ease-reveal) backwards;
+}
+html[data-motion=on] :is(.reveal-label,.spot-tooltip,.spot .marker-photo > span,.spot .marker-sign b,.zone[aria-pressed=true] .zone-symbol + span,.concept[aria-pressed=true] .tile-name,.format-choice[aria-pressed=true] > :last-child){
+  animation:var(--label-reveal) 190ms var(--ease-reveal) 30ms backwards;
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  html[data-motion=on] :is(.format-proof > *,.tile-art svg,.zone-symbol svg,.spot > :first-child,.spot .marker-sign svg,.spot .marker-photo svg){
+    transition:translate 150ms var(--ease-reveal);
+  }
+  html[data-motion=on] :is(.format-choice:hover .format-proof > *,.concept:hover .tile-art svg,.zone:hover .zone-symbol svg,.spot:hover .marker-pin,.spot:hover .marker-icon,.spot:hover .marker-classic,.spot:hover .marker-arrow){
+    translate:0 -2px;
+  }
+  html[data-motion=on] .spot:hover :is(.marker-sign,.marker-photo) svg{translate:2px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  :root{--icon-reveal:fade-appear;--label-reveal:fade-appear}
 }

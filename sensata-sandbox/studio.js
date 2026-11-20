@@ -27,6 +27,28 @@ const scenes = {
 const $ = id => document.getElementById(id);
 const stage = $('stage'), viewport = $('viewport'), camera = $('camera'), experience = $('experience');
 const params = new URLSearchParams(location.hash.slice(1));
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const motionStorageKey = 'sensata-sandbox.motion';
+let motionChoice = params.get('motion');
+if (motionChoice !== 'on' && motionChoice !== 'off') {
+  motionChoice = null;
+  try { motionChoice = localStorage.getItem(motionStorageKey); } catch { /* Storage can be disabled. */ }
+  if (motionChoice !== 'on' && motionChoice !== 'off') motionChoice = null;
+}
+function applyMotion() {
+  const mode = motionChoice ?? (reducedMotion.matches ? 'off' : 'on');
+  document.documentElement.dataset.motion = mode;
+  $('motion-toggle').setAttribute('aria-checked', String(mode === 'on'));
+  $('motion-state').textContent = mode === 'on' ? 'Вкл.' : 'Выкл.';
+}
+$('motion-toggle').onclick = () => {
+  motionChoice = document.documentElement.dataset.motion === 'on' ? 'off' : 'on';
+  try { localStorage.setItem(motionStorageKey, motionChoice); } catch { /* The URL still retains the choice. */ }
+  applyMotion();
+  saveView();
+};
+reducedMotion.addEventListener('change', applyMotion);
+applyMotion();
 let concept = concepts.find(item => item.id === params.get('style')) || concepts[0];
 let family = Object.hasOwn(familyNames,params.get('icons')) ? params.get('icons') : concept.family;
 let format = formats.find(item => item.id === params.get('format'))?.id || 'classic';
@@ -46,6 +68,7 @@ let spotElements = [];
 let frame = 0;
 function saveView() {
   const query = new URLSearchParams({style:concept.id, icons:family, scene:sceneId, format});
+  if (motionChoice) query.set('motion',motionChoice);
   const defaults = scenes[sceneId].view;
   [yaw,pitch,fov].forEach((value, i) => {
     if (Math.abs(value - defaults[i]) > .05) query.set(['yaw','pitch','fov'][i],String(+value.toFixed(1)));
@@ -74,6 +97,12 @@ function queueDraw() { if (!frame) frame = requestAnimationFrame(draw); }
 function thumbnail(scene) {
   if (scene.tileLevel === undefined) return mediaRoot+'main/'+scene.folder+'/thumbnail.jpg';
   return mediaRoot+'kv/'+scene.folder.replace(/_0$/,'_t.avif');
+}
+function updateCaption(id, text) {
+  const caption = document.createElement('span');
+  caption.className = 'reveal-label';
+  caption.textContent = text;
+  $(id).replaceChildren(caption);
 }
 function markerArt(shape, dest, label = dest.title) {
   const symbol = artwork.icon(family,dest.zone);
@@ -137,7 +166,7 @@ function renderCube() {
     return face;
   });
   camera.replaceChildren(...faces);
-  $('scene-title').textContent = scene.title;
+  updateCaption('scene-title', scene.title);
 }
 function changeScene(id) {
   sceneId = id;
@@ -163,12 +192,11 @@ function renderControls() {
 function renderConcept() {
   experience.dataset.theme = concept.id;
   $('specimen').dataset.theme = concept.id;
-  $('current-concept').textContent = concept.name;
   $('themes').querySelectorAll('button').forEach(el => el.setAttribute('aria-pressed',String(el.dataset.theme === concept.id)));
   document.querySelector('.sign').innerHTML = artwork.mark(concept.id);
   document.querySelector('.small-sign').innerHTML = artwork.ui(concept.id === 'atlas' ? 'pin' : 'orbit');
   $('menu-detail').textContent = concept.detail;
-  $('concept-title').textContent = 'Концепция «'+concept.name+'»';
+  updateCaption('concept-title', 'Концепция «'+concept.name+'»');
   $('concept-description').textContent = concept.description;
   $('palette').innerHTML = concept.palette.map(color => '<span title="'+color+'" aria-label="'+color+'" style="background:'+color+'"></span>').join('');
   $('palette').setAttribute('aria-label','Цвета концепции: '+concept.palette.join(', '));
@@ -180,10 +208,6 @@ function selectConcept(index) {
   renderConcept(); saveView();
 }
 document.querySelectorAll('[data-ui]').forEach(el => el.innerHTML = artwork.ui(el.dataset.ui));
-$('toggle-themes').onclick = () => {
-  $('themes').hidden = !$('themes').hidden;
-  $('toggle-themes').setAttribute('aria-expanded',String(!$('themes').hidden));
-};
 function selectFormat(id) {
   if (format === id) return;
   format = id; renderControls(); saveView();

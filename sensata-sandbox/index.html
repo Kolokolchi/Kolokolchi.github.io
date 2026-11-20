@@ -7,9 +7,9 @@
   <title>Песочница айдентики · Sensata 360 Studio</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="studio.css">
-  <link rel="stylesheet" href="markers.css">
+  <link rel="stylesheet" href="markers.css?v=motion-1">
   <script defer src="icons.js"></script>
-  <script defer src="studio.js"></script>
+  <script defer src="studio.js?v=motion-1"></script>
 </head>
 <body>
   <header class="masthead">
@@ -27,11 +27,17 @@
       <button class="share" id="share"><span data-ui="link"></span><span id="share-text">Скопировать ссылку</span></button>
     </div>
     <div class="picker-heading">
+      <h2 id="identity-title">Айдентика</h2>
+      <button type="button" id="motion-toggle" role="switch" aria-checked="false" aria-label="Анимация">
+        <span class="switch-track" aria-hidden="true"></span>
+        <span>Анимация</span><span id="motion-state" aria-hidden="true">Выкл.</span>
+      </button>
+    </div>
+    <nav class="concepts" id="themes" aria-labelledby="identity-title"></nav>
+    <div class="picker-heading">
       <h2 id="format-title">Формат меток</h2>
       <button id="original-format" aria-pressed="false">Исходная метка</button>
-      <button id="toggle-themes" aria-expanded="false" aria-controls="themes">Айдентика · <strong id="current-concept">Форма</strong><span aria-hidden="true">⌄</span></button>
     </div>
-    <nav class="concepts" id="themes" aria-label="Концепции айдентики" hidden></nav>
     <div class="format-picker" id="formats" data-theme="forma" role="group" aria-labelledby="format-title"></div>
 
     <section id="experience" data-theme="forma" aria-label="Предпросмотр тура">
