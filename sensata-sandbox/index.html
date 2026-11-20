@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Песочница айдентики · Sensata 360 Studio</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="studio.css">
+  <link rel="stylesheet" href="markers.css">
+  <script defer src="icons.js"></script>
+  <script defer src="studio.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="shell header-inner">
+      <div class="brand">
+        <img src="sensata-logo.png" alt="Sensata Group">
+        <span class="brand-divider"></span><span>360 Studio</span>
+      </div>
+      <a class="portal-link" href="../">На главную <span data-ui="external"></span></a>
+    </div>
+  </header>
+  <main class="shell">
+    <div class="intro">
+      <div><h1>Песочница айдентики</h1><p>Сравните форматы перехода между сценами на одной панораме ЖК MÁŃGİLİK.</p></div>
+      <button class="share" id="share"><span data-ui="link"></span><span id="share-text">Скопировать ссылку</span></button>
+    </div>
+    <div class="picker-heading">
+      <h2 id="format-title">Формат меток</h2>
+      <button id="original-format" aria-pressed="false">Исходная метка</button>
+      <button id="toggle-themes" aria-expanded="false" aria-controls="themes">Айдентика · <strong id="current-concept">Форма</strong><span aria-hidden="true">⌄</span></button>
+    </div>
+    <nav class="concepts" id="themes" aria-label="Концепции айдентики" hidden></nav>
+    <div class="format-picker" id="formats" data-theme="forma" role="group" aria-labelledby="format-title"></div>
+
+    <section id="experience" data-theme="forma" aria-label="Предпросмотр тура">
+      <header class="tour-header">
+        <div class="signature"><span class="sign"></span><span class="wordmark">Sensata</span></div>
+        <div class="tour-kind">Виртуальный тур</div>
+        <div class="city"><span data-ui="pin"></span>Алматы, Казахстан</div>
+        <button class="expand" id="expand" aria-label="Развернуть тур" title="Развернуть тур"><span data-ui="expand"></span></button>
+      </header>
+      <div class="tour-layout">
+        <div class="tour-menu">
+          <div class="site-title"><p>Жилой комплекс</p><h2>MÁŃGİLİK</h2><div class="address">Ауэзова, 3г / Гоголя</div></div>
+          <nav class="zones" id="scenes" aria-label="Зоны тура"></nav>
+          <div class="menu-foot"><span class="small-sign"></span><span id="menu-detail"></span></div>
+        </div>
+        <div class="stage" id="stage">
+          <div id="viewport" tabindex="0" role="group" aria-label="Панорама. Стрелки поворачивают вид, плюс и минус меняют масштаб."><div id="camera" aria-hidden="true"></div></div>
+          <div class="shade"></div><div id="spots"></div>
+          <div class="mode-label"><span data-ui="orbit"></span>360°</div>
+          <div class="scene-caption"><h3 id="scene-title"></h3></div>
+          <div class="camera-tools">
+            <button id="home-view" title="Исходный ракурс" aria-label="Исходный ракурс"><span data-ui="compass"></span></button><span class="tool-rule"></span>
+            <button id="zoom-out" title="Отдалить" aria-label="Отдалить"><span data-ui="minus"></span></button>
+            <button id="zoom-in" title="Приблизить" aria-label="Приблизить"><span data-ui="plus"></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="specimen">
+      <section class="style-note">
+        <h2 id="concept-title"></h2>
+        <p id="concept-description"></p>
+      </section>
+      <section class="palette-block"><h3>Палитра</h3><div class="palette" id="palette"></div></section>
+      <section class="type-block"><h3>Типографика</h3><span id="type-sample">Аа</span><span id="type-name"></span></section>
+      <section class="icons-block">
+        <label for="icon-family">Иконки тура</label>
+        <div class="icon-sample" id="icon-sample"></div>
+        <select id="icon-family" aria-label="Выбрать набор иконок"></select>
+      </section>
+    </div>
+    <div id="notice" class="sr-only" role="status"></div>
+  </main>
+</body>
+</html>
